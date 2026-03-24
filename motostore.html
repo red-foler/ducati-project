@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./motostore.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="ducatilogo" src="./dop/izob/Ducati_red_logo.svg.png">
+        <p class="navpoint">MODELS</p>
+        <p class="navpoint">GEAR</p>
+        <p class="navpoint">SERVICE</p>
+        <p class="navpoint">HERITAGE</p>
+        <p class="navpoint">CONTACTS</p>
+    </header>
+    <div class="glav">
+        <div class="glav2">
+            <div class="glavcont">
+                <h1 class="glavh1">UNLEASH THE BEAST</h1>
+                <p class="glavp">Your chance to own a piece of racing history.<br>The <b class="redname">Ducati Panigale
+                        V4 R</b> is now available</p>
+                <div class="priceline">
+                    <div class="glavprice">
+                        <p class="glavpricetext">$49,995(USD)<br>
+                        </p>
+                    </div>
+                    <div class="glavbuybutton"><span>VIEW OFFERS</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <p class="abouttext">This model represents the pinnacle of <i style="font-family: aud; font-weight: 100; color: rgb(41, 41, 41);">Ducati</i> engineering, crafted for those who refuse to
+            compromise between aesthetics and raw speed. The <i style="font-family: aud; font-weight: 100; color: rgb(41, 41, 41);">aggressive</i> silhouette, featuring carbon fiber wings,
+            doesn’t just capture attention—it provides <i style="font-family: aud; font-weight: 100; color: rgb(41, 41, 41);">incredible</i> downforce at high velocities. Here, the signature <b style="font-family: aud;background-color: rgb(215, 0, 0); font-weight: 100;color: rgb(255, 255, 255); padding-left:5px;padding-right:5px;">red</b>
+            is more than just paint; it is a symbol of the racing heritage embedded in every detail of this road-legal
+            <i style="font-family: aud; font-weight: 100; color: rgb(41, 41, 41);">superbike</i>
+        </p>
+    </div>
+
+    <div class="infoblock">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url(./dop/izob/Ducati_Panigale_V4_R.jpg);"></div>
+        </div>
+        <div class="slide" style="background-image: url(./dop/izob/Ducati-Panigale-V4R_6.jpg);"></div>
+        <div class="slide" style="background-image: url(./dop/izob/Ducati-Panigale-V4R_3.jpg);"></div>
+        <div class="slide" style="background-image: url(./dop/izob/Ducati-Panigale-V4R_4.jpg);"></div>
+        <div class="slide" style="background-image: url(./dop/izob/Ducati-Panigale-V4R_2.jpg);"></div>
+        
+<div class="textandg">
+    <div class="spec">
+        <p class="textspec">SPECIFICATION</p>
+        <p class="specs">Engine: Desmosedici Stradale R</p>
+        <p class="specs">Displacement: 998 cc</p>
+        <p class="specs">Power: 218hp at 15,500 rpm</p>
+        <p class="specs">Top Speed: 300+ km/h (186+ mph)</p>
+        <p class="specs">Acceleration (0-100 km/h): 2.8 sec</p>
+        <p class="specs">Torque: 111.3 Nm / 82.1 lb-ft at 12,000 rpm</p>
+        <p class="specs">Weight(dry):172kg / 379lbs</p>
+        <p class="specs">Fuel Tank: 17 L / 4.5 US gal</p>
+        <p class="specs">Electronics: Traction Conntrol, Wheelie Control, Slide Control</p>
+    </div>
+    <div class="graphic">
+        <img class="graphicimg" src="./dop/izob/graphic_2.png">
+    </div>
+    </div>
+</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll('.slide');
+            let current = 0;
+
+            if(slides.length > 0){
+                setInterval(() => {
+                    slides[current].classList.remove('active');
+                    current = (current + 1) % slides.length;
+                    console.log(current)
+                    slides[current].classList.add('active');
+                }, 6000);
+            }
+        });
+    </script>
+</body>
+
+</html>
