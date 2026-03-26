@@ -9,25 +9,19 @@
 </head>
 
 <body>
+    <div class="overlay">
     <header class="header">
         <img class="ducatilogo" src="./dop/izob/Ducati_red_logo.svg.png">
-        <div class="header-nav">
-            <p class="navpoint">MODELS</p>
-            <p class="navpoint">GEAR</p>
-            <p class="navpoint">SERVICE</p>
-            <p class="navpoint">HERITAGE</p>
-            <p class="navpoint">CONTACTS</p>
-        </div>
-        <div class="bmenu" id="bmenu">
-            <img src="./dop/izob/bmenuicon2.png">
-        </div>
-        <nav class="nav-menu" id="nav-menu">
-            <a class="navpoint">MODELS<a>
+        <nav class="nav">
+            <a class="navpoint">MODELS</a>
             <a class="navpoint">GEAR</a>
             <a class="navpoint">SERVICE</a>
             <a class="navpoint">HERITAGE</a>
             <a class="navpoint">CONTACTS</a>
         </nav>
+        <div class="bmenu" id="bmenu">
+            <img src="./dop/izob/bmenuicon2.png">
+        </div>
     </header>
     <div class="glav">
         <div class="glav2">
@@ -82,21 +76,7 @@
     </div>
     </div>
 </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const slides = document.querySelectorAll('.slide');
-            let current = 0;
-
-            if(slides.length > 0){
-                setInterval(() => {
-                    slides[current].classList.remove('active');
-                    current = (current + 1) % slides.length;
-                    console.log(current)
-                    slides[current].classList.add('active');
-                }, 6000);
-            }
-        });
-    </script>
+    <script src="./motostore.js"></script>
+    </div>
 </body>
-
 </html>
