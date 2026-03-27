@@ -42,19 +42,15 @@ body{
     padding: 20px;
 }
 .nav{
-    width: 100%;
+    width: 50vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0;
 }
 .nav.open{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     margin: 0;
 }
 .ducatilogo{
@@ -364,22 +360,12 @@ body{
     }
     .nav{
         display: flex;
-        visibility:visible;
+        
         transition: 0.3s ease-in-out;
-        transform: translateX(100%);
-    }
-    .bmenu{
-        display:flex;
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        filter: brightness(0.8);
-        cursor: pointer;
-    }
-    .nav.open{
-        display:flex;
+        transform: translateX(110%);
+
+
+
         flex-direction: column;
         align-items: center;
         justify-content:space-around;
@@ -395,7 +381,22 @@ body{
         border-bottom: 1px solid rgba(255, 255, 255, 0.4);
         box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
         z-index: 1000;
-        transform: translateX(0);
+
+    }
+    .nav.open{
+        display:flex;
+        visibility:visible;
+        transform: translateX(5vw);
+    }
+    .bmenu{
+        display:flex;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        filter: brightness(0.8);
+        cursor: pointer;
     }
     .glavcont{
         width: 100vw;
@@ -428,7 +429,7 @@ body{
 
 
 
-.about{
+    .about{
         padding: 5px;
     }
     .abouttext{
