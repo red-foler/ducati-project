@@ -112,7 +112,7 @@ body{
 .glav_2{
     width: 100%;
     height: 30vh;
-    min-height: 500px;
+    min-height: 400px;
     background: url(./dop/izobFORpanigale/Panigale_V4R_2.jpg);
     filter: brightness(1.2);
     background-position:50% 80%;
@@ -143,7 +143,7 @@ body{
     justify-content: left;    
 }
 .glav2_2{
-    min-height: 500px;
+    min-height: 400px;
     position: absolute;
     width: 100%;
     height: 30vh;
@@ -482,7 +482,13 @@ body{
     .glav{
         filter: brightness(1.1);
     }
+    .glav_2{
+        filter: brightness(1.1);
+    }
     .glav2{
+        background: linear-gradient(90deg ,rgba(5, 5, 5, 0.9),rgba(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) ;
+    }
+    .glav2_2{
         background: linear-gradient(90deg ,rgba(5, 5, 5, 0.9),rgba(0, 0, 0, 0.7) ,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)) ;
     }
 
