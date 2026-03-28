@@ -27,7 +27,7 @@ body{
     background-size: 50vh;
     margin: 0;
     padding: 0;
-    height: 200vh;
+    height: auto;
     width:100vw;
     overflow-x: hidden;
     -webkit-user-select: none;
@@ -421,6 +421,98 @@ body{
 
 
 
+
+
+.blocks{
+    margin: 5vh;
+}
+.gategblock{
+    margin: 0;
+    padding: 15px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 5px;
+}
+.parentcategs{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+}
+.categcard{
+    height: 25vw;
+    min-width: 100%;
+    border-radius: 3px;
+    filter: brightness(0.85);
+    transition: 0.16s ease-in-out;
+}
+.categcard:hover{
+    filter: brightness(1);
+}
+.h{
+    font-family: man;
+    text-align: center;
+    font-size: 26px;
+    color: rgb(220, 220, 220);
+    margin-top: 0;
+}
+.superbike{
+    background: url(./dop/izobFORpanigale/Panigale_V4R_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    
+}
+.naked{
+    background: url(./dop/izobFORnaked/ducati_monster.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.multistrada{
+    background: url(./dop/izobFORmultistrada/multistrada_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.scrambler{
+    background: url(./dop/izobFORscrambler/scrambler.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.diavels{
+    background: url(./dop/izobFORdiavels/diavel_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.desertX{
+    background: url(./dop/izobFORdesertX/desertX_4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px){
 
     .header{
@@ -538,5 +630,26 @@ body{
     .graphicimg{
         width: 84vw;
     }
-}
 
+
+
+
+
+}
+@media (max-width: 1080px){
+.blocks{
+    margin: 2vh;
+}
+.gategblock{
+    margin: 0;
+    padding: 2vw;
+}
+.parentcategs{
+    grid-template-columns: repeat(1 , 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.categcard{
+    height: 50vw;
+    min-width: 100%;
+}
+}
