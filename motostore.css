@@ -446,13 +446,13 @@ body{
     min-width: 100%;
     border-radius: 3px;
     filter: brightness(0.8);
-    transition: 0.1s ease-in-out;
+    transition: 0.15s ease-in-out;
     will-change: transform;
     transform: translateZ(0);
     backface-visibility: hidden;
 }
 .categcard:hover{
-    filter: brightness(0.9);
+    filter: brightness(0.87);
     scale: 1.005;
 }
 .h{
@@ -527,7 +527,7 @@ body{
     font-family: aud;
     color: rgb(255, 255, 255);
     font-weight: 800;
-    font-size: clamp(32px, 8vw,56px);
+    font-size: clamp(30px, 8vw,54px);
     letter-spacing: 5px;
     margin: 0 auto;
     margin-left: 3vh;
