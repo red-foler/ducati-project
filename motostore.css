@@ -477,7 +477,7 @@ body{
     background-size: cover;  
 }
 .multistrada{
-    background: url(./dop/forcards/multistrada_2.webp);
+    background: url(./dop/forcards/multi_2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;  
@@ -508,59 +508,41 @@ body{
     padding: 0;
     position: absolute;
     bottom: 0;
-    height: 40%;
+    height: 30%;
     width: 100%;
     backdrop-filter: blur(3px);
     background: linear-gradient(0deg, rgb(12, 12, 12), rgba(13, 13, 13, 0.9), rgba(16, 16, 16, 0.8),  rgba(20, 20, 20, 0.4),rgba(20, 20, 20, 0));
-}
-.cardsoverlay_2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    height: 40%;
-    width: 100%;
-    backdrop-filter: blur(3px);
-    background: linear-gradient(0deg, rgb(12, 12, 12), rgba(13, 13, 13, 0.9), rgba(16, 16, 16, 0.8),  rgba(20, 20, 20, 0.4),rgba(20, 20, 20, 0));
-
 }
 .categname{
     font-family: aud;
     color: rgb(255, 255, 255);
     font-weight: 800;
-    font-size: clamp(30px, 8vw,54px);
-    letter-spacing: 5px;
+    font-size: clamp(20px, 5.8vw,39px);
+    letter-spacing: 4.5px;
     margin: 0 auto;
-    margin-left: 3vh;
+    margin-left: 2vh;
 }
 .categtypes{
     font-family: man;
     color: rgb(225, 225, 225);
     font-weight: 400;
-    font-size: 1.5vh;
-    letter-spacing: 3px;
+    font-size: clamp(10px, 1.1vw,13px);
+    letter-spacing: 1px;
     margin: 0 auto;
     margin-top: 0;
-    margin-left: 3vh;
+    margin-left: 2vh;
     
 }
 .arrowONcard{
-    width: 60px;
-    height: 60px;
+    width: 6vh;
+    height: 6vh;
     position: absolute;
-    right: 3vh;
+    right: 1.5vh;
     margin: 0 auto;
     padding: 0;
     transition: 0.2s;
 }
-.arrowONcard:hover{
-    width: 65px;
-    height: 65px;
-    transform: translate(2.5px, 2.5px);
-}
+
 
 
 
