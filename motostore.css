@@ -762,7 +762,7 @@ body{
 }
 .textingearcards{
     font-size: 2.5vw;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     font-family: aud;
     font-weight: 600;
     color: rgb(220, 220, 220);
@@ -797,6 +797,6 @@ body{
 }
 .gearblock{
     margin: 0;
-    padding: 2vw 0.7vw 2vw 0.7vw;
+    padding: 2vw 1vw 2vw 1vw;
 }
 }
