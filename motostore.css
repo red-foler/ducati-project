@@ -304,12 +304,12 @@ body{
 }
 .abouttext{
     font-family:cin;
-    font-size: 26px;
+    font-size: 24px;
     color: rgb(49, 49, 49);
     font-weight: 500;
     width: 95%;
-    line-height: 50px;
-    letter-spacing: 2px;
+    line-height: 44px;
+    letter-spacing: 4px;
 }
 
 
@@ -426,7 +426,7 @@ body{
 .blocks{
     margin: 5vh;
 }
-.gategblock{
+.categblock{
     margin: 0;
     padding: 25px;
     background-color: rgba(178, 178, 178, 0.1);
@@ -437,12 +437,16 @@ body{
 }
 .parentcategs{
     display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+    width: 100%;
     grid-template-columns: repeat(2 , 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 45px;
 }
 .categcard{
-    height: 25vw;
+    height: 24vw;
     min-width: 100%;
     border-radius: 3px;
     filter: brightness(0.8);
@@ -454,7 +458,7 @@ body{
 }
 .categcard:hover{
     filter: brightness(0.87);
-    scale: 1.005;
+    scale: 1.0065;
 }
 .h{
     font-family: man;
@@ -510,7 +514,6 @@ body{
     bottom: 0;
     height: 30%;
     width: 100%;
-    backdrop-filter: blur(3px);
     background: linear-gradient(0deg, rgb(12, 12, 12), rgba(13, 13, 13, 0.9), rgba(16, 16, 16, 0.8),  rgba(20, 20, 20, 0.4),rgba(20, 20, 20, 0));
 }
 .categname{
@@ -529,18 +532,72 @@ body{
     font-size: clamp(10px, 1.1vw,13px);
     letter-spacing: 1px;
     margin: 0 auto;
-    margin-top: 0;
     margin-left: 2vh;
-    
 }
 .arrowONcard{
     width: 6vh;
     height: 6vh;
     position: absolute;
     right: 1.5vh;
+    top: auto;
+    bottom: auto;
     margin: 0 auto;
     padding: 0;
-    transition: 0.2s;
+}
+
+
+
+
+.gearblock{
+    margin: 0;
+    padding: 25px;
+    background-color: rgba(178, 178, 178, 0.1);
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+.gearcard{
+    border-radius: 3px;
+    background-color: #202020;
+    height: 17vw;
+    width: 12vw;
+    margin: 0  auto;
+    margin: 0;
+    border: 1.5px solid rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gearimg{
+    position: relative;
+    width: 70%;
+    z-index: 10;
+}
+.redround{
+    transform: skewX(-20deg);
+    z-index: 11;
+    width:13vw;
+    height: 2vw;
+    background-color: #df1f26;
+    position: absolute;
+    top: 75%;
+    box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textingearcards{
+    font-size: 1.1vw;
+    letter-spacing: 7px;
+    font-family: aud;
+    font-weight: 500;
+    color: rgb(220, 220, 220);
 }
 
 
@@ -649,10 +706,10 @@ body{
         padding: 5px;
     }
     .abouttext{
-        font-size: 18px;
+        font-size: 17px;
         width: 95%;
         line-height: 20px;
-        letter-spacing: 1.8px;
+        letter-spacing: 1px;
     }
 
 
@@ -684,13 +741,18 @@ body{
 
 
 
+    .gearimg{
+    width: 90%;
+}
+
+
 
 }
 @media (max-width: 1080px){
 .blocks{
     margin: 2vh;
 }
-.gategblock{
+.categblock{
     margin: 0;
     padding: 2vw;
 }
@@ -701,5 +763,9 @@ body{
 .categcard{
     height: 50vw;
     min-width: 100%;
+}
+.gearblock{
+    margin: 0;
+    padding: 2vw;
 }
 }
