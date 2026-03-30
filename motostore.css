@@ -559,7 +559,6 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    gap: 15px;
 }
 .gearcard{
     border-radius: 3px;
@@ -741,16 +740,48 @@ body{
 
 
 
-    .gearimg{
+    .gearcard{
+    height: 25vw;
+    width: 16vw;
+}
+.gearimg{
+    position: relative;
     width: 90%;
+    z-index: 10;
+}
+.redround{
+    width:17vw;
+    height: 3vw;
+    background-color: #df1f26;
+    position: absolute;
+    top: 75%;
+    box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textingearcards{
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    font-family: aud;
+    font-weight: 600;
+    color: rgb(220, 220, 220);
+}
 }
 
 
 
-}
+
+
+
+
+
+
+
+
 @media (max-width: 1080px){
 .blocks{
-    margin: 2vh;
+    margin: 1vh;
 }
 .categblock{
     margin: 0;
@@ -766,6 +797,6 @@ body{
 }
 .gearblock{
     margin: 0;
-    padding: 2vw;
+    padding: 2vw 0.7vw 2vw 0.7vw;
 }
 }
