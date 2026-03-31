@@ -106,7 +106,7 @@ body{
     width: 100%;
     height: 100vh;
     min-height: 500px;
-    background: url(./dop/izob/moto_3.jpeg);
+    background: url(./dop/izob/moto_3.webp);
     filter: brightness(1.5);
     background-position:65% 10%;
     background-repeat: no-repeat;
@@ -539,8 +539,8 @@ body{
     margin-left: 2vh;
 }
 .arrowONcard{
-    width: 6vh;
-    height: 6vh;
+    width: 5.5vh;
+    height: 5.5vh;
     position: absolute;
     right: 1.5vh;
     top: auto;
@@ -613,6 +613,7 @@ body{
 
 
 .footer{
+    filter: brightness(0.9);
     bottom: 0;
     width: 100vw;
     height: 45vh;
@@ -627,11 +628,59 @@ body{
     margin: 0;
     padding: 0;
     background: url(./dop/izob/foterback.png);
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: 100vw auto;
+    background-size: 100vw auto;    
 }
+.footercontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid #df1f26; */
+}
+.footercont{
+    height: 80%;
+    /* border: 1px solid #df1f26; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.DUCATIword{
+    font-family: hel;
+    color: rgb(255, 255, 255);
+    font-size: clamp(45px, 7vw, 90px);
+    margin: 0;
+}
+.footp{
+    color: rgb(186, 186, 186);
+    font-family: man;
+    font-size: clamp(15px, 2vw, 25px);
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0;
+}
+.footp_2{
+    color: rgb(234, 234, 234);
+    font-family: man;
+    font-size: clamp(8px, 1.3vw, 15px);
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    text-align: left;
+}
+.follow{
+    font-size: 2vw;
+    font-family: man;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
 
+}
 
 
 
@@ -790,14 +839,22 @@ body{
 }
 .textingearcards{
     font-size: 2.5vw;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     font-family: aud;
     font-weight: 600;
     color: rgb(220, 220, 220);
 }
+
+
+.footercontent{
+    width: 90%;
+}
+.arrowONcard{
+    width: 4vh;
+    height: 4vh;
 }
 
-
+}
 
 
 
@@ -826,5 +883,16 @@ body{
 .gearblock{
     margin: 0;
     padding: 2vw 1vw 2vw 1vw;
+}
+
+.footer{
+    height: 25vh;
+}
+.infooter{
+    height: 25vh;
+}
+.footercont{
+    display: flex;
+    justify-content: space-evenly;
 }
 }
