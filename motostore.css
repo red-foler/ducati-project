@@ -641,11 +641,9 @@ body{
     padding: 0;
     width: 80%;
     height: 100%;
-    /* border: 1px solid #df1f26; */
 }
 .footercont{
-    height: 80%;
-    /* border: 1px solid #df1f26; */
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -673,13 +671,29 @@ body{
     letter-spacing: 0.7px;
     text-align: left;
 }
+.footercont_2{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    gap: 30px;
+}
 .follow{
-    font-size: 2vw;
+    font-size:clamp(15px, 2vw, 25px);
     font-family: man;
     font-weight: 900;
     color: rgb(255, 255, 255);
     letter-spacing: 3px;
-
+    margin: 0;
+}
+.folowicons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.folicon{
+    width: 30px;
 }
 
 
