@@ -643,7 +643,7 @@ body{
     height: 100%;
 }
 .footercont{
-    height: 60%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -652,39 +652,32 @@ body{
 .DUCATIword{
     font-family: hel;
     color: rgb(255, 255, 255);
-    font-size: clamp(45px, 7vw, 90px);
+    font-size: clamp(40px, 6vw, 80px);
     margin: 0;
 }
 .footp{
     color: rgb(186, 186, 186);
     font-family: man;
-    font-size: clamp(15px, 2vw, 25px);
+    font-size: clamp(13px, 2vw, 23px);
     letter-spacing: 2px;
     text-align: left;
     margin: 0;
 }
-.footp_2{
-    color: rgb(234, 234, 234);
-    font-family: man;
-    font-size: clamp(8px, 1.3vw, 15px);
-    font-weight: 600;
-    letter-spacing: 0.7px;
-    text-align: left;
-}
 .footercont_2{
-    height: 60%;
+    height: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content:start;
     gap: 30px;
 }
 .follow{
     font-size:clamp(15px, 2vw, 25px);
     font-family: man;
     font-weight: 900;
-    color: rgb(255, 255, 255);
+    color: rgb(194, 194, 194);
     letter-spacing: 3px;
     margin: 0;
+    text-align: right;
 }
 .folowicons{
     display: flex;
@@ -694,6 +687,15 @@ body{
 }
 .folicon{
     width: 30px;
+    filter: brightness(0.8);
+    transition: 0.2s;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #df1f2500;
+    margin: 3px;
+}
+.folicon:hover{
+    filter: brightness(1.2) drop-shadow(0px 0px 5px red);
 }
 
 
