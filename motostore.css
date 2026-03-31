@@ -4,6 +4,10 @@ html{
     padding: 0;
 }
 @font-face {
+    font-family: hel;
+    src: url(./dop/fonts/HelveticaNeueCyr-BlackItalic.ttf);
+}
+@font-face {
     font-family: cin;
     src: url(./dop/fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
 }
@@ -572,6 +576,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.gearcard:hover{
+    border: 1.5px solid rgb(229, 0, 0);
 }
 .gearimg{
     position: relative;
@@ -603,6 +612,25 @@ body{
 
 
 
+.footer{
+    bottom: 0;
+    width: 100vw;
+    height: 45vh;
+    margin: 0;
+    background-color: #090909;
+    padding: 0;
+    border-top: 3px solid rgb(200, 0, 0);
+}
+.infooter{
+    width: 100vw;
+    height: 45vh;
+    margin: 0;
+    padding: 0;
+    background: url(./dop/izob/foterback.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+}
 
 
 
