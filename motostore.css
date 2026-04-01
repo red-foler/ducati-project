@@ -2,6 +2,7 @@ html{
     width: 100vw;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: hel;
@@ -75,8 +76,9 @@ body{
 .navpoint{
     color: rgb(230, 230, 230);
     font-family: man;
-    font-size: 1.6vh;
+    font-size: 1.8vh;
     font-weight: 500;
+    letter-spacing: 2px;
     cursor: pointer;
     position: relative;
     text-decoration: none;
@@ -627,7 +629,7 @@ body{
     height: 45vh;
     margin: 0;
     padding: 0;
-    background: url(./dop/izob/foterback.png);
+    background: url(./dop/izob/foterback_2.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 100vw auto;    
@@ -671,10 +673,10 @@ body{
     gap: 30px;
 }
 .follow{
-    font-size:clamp(15px, 2vw, 25px);
+    font-size:clamp(14px, 2vw, 24px);
     font-family: man;
     font-weight: 900;
-    color: rgb(194, 194, 194);
+    color: rgb(227, 227, 227);
     letter-spacing: 3px;
     margin: 0;
     text-align: right;
@@ -712,6 +714,106 @@ body{
 
 
 
+.raceblock{
+    margin: 0;
+    padding: 25px;
+    background-color: rgba(178, 178, 178, 0.1);
+    border-radius: 5px;
+}
+.racehistory{
+    font-family: man;
+    color: #cccccc;
+    font-weight: 500;
+    font-size: 2.7vh;
+    letter-spacing: 0.2vh;
+    line-height: 4vh;
+    text-align: justify;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    opacity: 1;
+}
+.container .card .content h3 {
+    font-family: aud;
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+
+.container .card .content p {
+    font-size: 1.06em;
+    font-family: man;
+    color: #cccccc;
+    font-weight: 600;
+}
+
+
+.cardsbackimg{
+    width: 70%;
+    position: relative;
+    top: 0;
+    right: 0;
+    filter: brightness(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px){
 
     .header{
@@ -731,8 +833,8 @@ body{
         position:absolute;
         top: 0;
         right: 0;
-        width: 50vw;
-        height: 50vh;
+        width: 70vw;
+        height: 40vh;
         background: rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(6px);
         border-radius: 5px 0px 0px 5px;
@@ -870,6 +972,27 @@ body{
     height: 4vh;
 }
 
+
+
+
+
+
+
+.raceblock{
+    margin: 0;
+    padding: 3vw;
+    background-color: rgba(178, 178, 178, 0.1);
+    border-radius: 5px;
+}
+.racehistory{
+    font-family: man;
+    color: #cccccc;
+    font-weight: 400;
+    font-size: 2.5vh;
+    letter-spacing: 0.1vh;
+    line-height: 3vh;
+    text-align:center;
+}
 }
 
 
