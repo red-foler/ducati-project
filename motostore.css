@@ -784,6 +784,78 @@ body{
 
 
 
+.mapblock{
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(178, 178, 178, 0.1);
+    border-radius: 5px;
+}
+
+.map-wrapper {
+    position: relative; 
+    display: inline-block;
+    width: 100%;
+}
+
+.map-base {
+    width: 100%;
+    display: block;
+    opacity: 0.8;
+}
+.dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #ff0000;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ff0000;
+    cursor: pointer;
+}
+.pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 13px;
+    border: 1.6px solid #ff0000;
+    border-radius: 50%;
+    animation: map-pulse 2s infinite;
+}
+@keyframes map-pulse {
+    0% { width: 10px; height: 10px; opacity: 1; }
+    100% { width: 40px; height: 40px; opacity: 0; }
+}
+.moscow {
+    top: 21%; 
+    left: 55.5%; 
+}
+
+.bologna {
+    top: 29%;
+    left: 50.2%;
+}
+.tokio {
+    top: 33.3%; 
+    left: 82.4%; 
+}
+
+.los-angeles {
+    top: 34.5%;
+    left: 16.9%;
+}
+.sydney{
+    top: 76.5%;
+    left: 85%;
+}
+.new-york{
+    top: 30.1%;
+    left: 28.9%;
+}
+
+
+
+
 
 
 
