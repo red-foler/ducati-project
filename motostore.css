@@ -17,10 +17,6 @@ html{
     src: url(./dop/fonts/Manrope/Manrope-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: per;
-    src: url(./dop/fonts/PermanentMarker-Regular.ttf);
-}
-@font-face {
     font-family: aud;
     src: url(./dop/fonts/Audiowide-Regular.ttf);
 }
