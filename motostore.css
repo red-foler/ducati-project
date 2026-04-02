@@ -4,6 +4,7 @@ html{
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    position: relative;
 }
 @font-face {
     font-family: hel;
@@ -23,6 +24,7 @@ html{
 }
 
 body{
+    position: relative;
     background:url(./dop/izob/asphalt.webp);
     backdrop-filter: brightness(0.3);
     background-repeat: repeat;
