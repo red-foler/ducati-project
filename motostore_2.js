@@ -504,7 +504,7 @@ return VanillaTilt;
 
 
  VanillaTilt.init(document.querySelectorAll(".card"), {
-            max: -20,
+            max: 20,
             speed: 700,
             glare: true,
             "max-glare": 0.5
