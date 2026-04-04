@@ -5,6 +5,7 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
     position: relative;
+    height: auto;
 }
 @font-face {
     font-family: hel;
@@ -33,7 +34,6 @@ body{
     padding: 0;
     height: auto;
     width:100vw;
-    overflow-x: hidden;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
