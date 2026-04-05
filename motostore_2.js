@@ -510,3 +510,38 @@ return VanillaTilt;
             "max-glare": 0.5
         });
        
+
+// Функция плавного отсчета
+const animateNumbers = (el) => {
+    const target = +el.getAttribute('data-target'); // Берем число из атрибута
+    const duration = 6000; // 2 секунды на анимацию
+    let start = null;
+
+    const step = (timestamp) => {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / duration, 1);
+        
+        // Математика для замедления в конце (easeOutQuad)
+        el.innerText = Math.floor(progress * target);
+
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        } else {
+            el.innerText = target; // Фиксируем финал
+        }
+    };
+    window.requestAnimationFrame(step);
+};
+
+// Настройка "наблюдателя" за скроллом
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateNumbers(entry.target);
+            observer.unobserve(entry.target); // Запускаем только 1 раз
+        }
+    });
+}, { threshold: 0.5 }); // Сработает, когда 50% блока будет в экране
+
+// Запуск для всех элементов .stat-number
+document.querySelectorAll('.stat-number').forEach(num => observer.observe(num));
