@@ -552,3 +552,16 @@ const observerOptions = {
     rootMargin: '0px 0px 100px 0px', // Начинаем анимацию ЗА 100px до того, как блок вкатится в экран
     threshold: 0 // Сработает при появлении ПЕРВОГО пикселя
 };
+
+
+document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll('.slide');
+            let current = 0;
+            if(slides.length > 0){
+                setInterval(() => {
+                    slides[current].classList.remove('active');
+                    current = (current + 1) % slides.length;
+                    slides[current].classList.add('active');
+                }, 6000);
+            }
+        })
