@@ -545,3 +545,10 @@ const observer = new IntersectionObserver((entries) => {
 
 // Запуск для всех элементов .stat-number
 document.querySelectorAll('.stat-number').forEach(num => observer.observe(num));
+
+
+const observerOptions = {
+    root: null, // Следим относительно вьюпорта
+    rootMargin: '0px 0px 100px 0px', // Начинаем анимацию ЗА 100px до того, как блок вкатится в экран
+    threshold: 0 // Сработает при появлении ПЕРВОГО пикселя
+};
