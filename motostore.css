@@ -38,6 +38,10 @@ body{
     -ms-user-select: none;
     user-select: none;
 }
+.for_long_disp{
+    margin: 0;
+    padding: 0;
+}
 .header{
     height: 40px;
     position:relative;
@@ -326,7 +330,7 @@ body{
     color: rgb(49, 49, 49);
     font-weight: 500;
     width: 95%;
-    line-height: 44px;
+    line-height: 51px;
     letter-spacing: 4px;
 }
 
@@ -728,6 +732,16 @@ body{
 }
 .folicon:hover{
     filter: brightness(1.2) drop-shadow(0px 0px 5px red);
+}
+.reda{
+    color: #df1f26;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.reda:hover{
+    color: #f60008;
+    text-decoration:underline;
 }
 
 
@@ -1167,4 +1181,13 @@ body{
     height: 0%;
     display: none;
 }
+}
+
+
+
+
+@media (max-width: 1080px){
+    .for_long_disp{
+        max-width: 1080px;
+    }
 }
