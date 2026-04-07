@@ -960,10 +960,24 @@ body{
 .supersport_ctlg{
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
 }
 .ctlg_card{
+    width: 500px;
+    height: 250px;
     margin: 0;
     padding: 0;
+    border: 1px solid red;
+}
+.ctlg_img{
+    width: auto;
+    height: 100%;
+
 }
 
 
@@ -978,7 +992,47 @@ body{
 
 
 
+@media (max-width: 1080px){
+.blocks{
+    margin: 1vh;
+}
+.categblock{
+    margin: 0;
+    padding: 2vw;
+}
+.parentcategs{
+    grid-template-columns: repeat(1 , 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.categcard{
+    height: 50vw;
+    min-width: 100%;
+}
+.gearblock{
+    margin: 0;
+    padding: 2vw 1vw 2vw 1vw;
+}
 
+.footer{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+.infooter{
+    height: 35vh;
+}
+
+.footercont_c{
+    height: 0%;
+    display: none;
+}
+.supersport_ctlg{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5vw;
+}
+}
 
 
 
@@ -1201,48 +1255,20 @@ body{
     line-height: 3vh;
     text-align:center;
 }
-}
 
-
-
-
-
-
-
-
-
-@media (max-width: 1080px){
-.blocks{
-    margin: 1vh;
-}
-.categblock{
-    margin: 0;
-    padding: 2vw;
-}
-.parentcategs{
+.supersport_ctlg{
+    display: grid;
     grid-template-columns: repeat(1 , 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 45px;
 }
-.categcard{
-    height: 50vw;
-    min-width: 100%;
-}
-.gearblock{
-    margin: 0;
-    padding: 2vw 1vw 2vw 1vw;
 }
 
-.footer{
-    height: 40vh;
-    display: flex;
-    align-items: center;
-}
-.infooter{
-    height: 35vh;
-}
 
-.footercont_c{
-    height: 0%;
-    display: none;
-}
-}
+
+
+
+
+
+
+
