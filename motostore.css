@@ -51,6 +51,19 @@ body{
     margin: 0;
     padding: 20px;
 }
+.header_2{
+    height: 40px;
+    position:fixed;
+    z-index: 10;
+    width: 50%;
+    min-width: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 23px;
+}
 .nav{
     width: 100%;
     display: flex;
@@ -107,9 +120,9 @@ body{
     width: 100%;
     height: 100vh;
     min-height: 500px;
-    background: url(./dop/izob/moto_3.webp);
+    background: url(./dop/izob/moto_3_1.webp);
     filter: brightness(1.5);
-    background-position:65% 10%;
+    background-position:35% 70%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -260,7 +273,7 @@ body{
     position: relative;
     overflow: hidden;
 }
-.glavbuybutton:visited, .navpoint:visited, .navpoint:active, .navpoint,.glavbuybutton:active,.glavbuybutton{
+.glavbuybutton:visited, .navpoint:visited, .navpoint:active, .navpoint,.glavbuybutton:active,.glavbuybutton,.ducatilogo:visited{
     text-decoration: none;
     outline: none;
 
@@ -330,7 +343,7 @@ body{
     flex-direction: row;
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: relative;
     justify-content: left;
     box-shadow: 0px -5px 15px 0px rgba(0, 0, 0, 0.15);
 }
@@ -614,6 +627,7 @@ body{
 
 
 .footer{
+    position: relative;
     filter: brightness(0.9);
     bottom: 0;
     width: 100vw;
@@ -622,6 +636,7 @@ body{
     background-color: #090909;
     padding: 0;
     border-top: 3px solid rgb(200, 0, 0);
+    z-index: 1000;
 }
 .infooter{
     width: 100vw;
@@ -636,19 +651,24 @@ body{
 .footercontent{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;
     margin: 0 auto;
     padding: 0;
-    width: 80%;
+    width: 88%;
     height: 100%;
 }
 .footercont{
     height: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+.footercont_c{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    
 }
 .DUCATIword{
     font-family: hel;
@@ -657,12 +677,22 @@ body{
     margin: 0;
 }
 .footp{
-    color: rgb(186, 186, 186);
+    color: rgb(200, 200, 200);
     font-family: man;
     font-size: clamp(13px, 2vw, 23px);
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-align: left;
     margin: 0;
+    font-weight: 300;
+}
+.footp_c{
+    color: rgb(224, 224, 224);
+    font-family: man;
+    font-size: clamp(13px, 2vw, 23px);
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
 }
 .footercont_2{
     height: 45%;
@@ -670,6 +700,7 @@ body{
     flex-direction: column;
     justify-content:start;
     gap: 30px;
+    margin-left: 6vw;
 }
 .follow{
     font-size:clamp(14px, 2vw, 24px);
@@ -894,6 +925,13 @@ body{
         min-width: 10px;
         padding: 0;
     }
+    .header_2{
+        position: fixed;
+        width: 90vw;
+        margin: 5vw;
+        min-width: 10px;
+        padding: 0;
+    }
     .nav{
         display: flex;
         transition: 0.3s ease-in-out;
@@ -1037,14 +1075,35 @@ body{
 
 .footercontent{
     width: 90%;
+    flex-direction: column;
 }
 .arrowONcard{
     width: 4vh;
     height: 4vh;
 }
-
-
-
+.footer{
+    height: 30vh;
+}
+.infooter{
+    height: 30vh;
+}
+.footp{
+    text-align: center;
+}
+.footp_c{
+    margin-left: 0vw;
+}
+.footercont_2{
+    margin-left: 0;
+    justify-content: space-evenly;
+    gap: 0;
+}
+.follow{
+    text-align: center;
+}
+.DUCATIword{
+    text-align: center;
+}
 
 
 
@@ -1096,13 +1155,16 @@ body{
 }
 
 .footer{
-    height: 25vh;
+    height: 40vh;
+    display: flex;
+    align-items: center;
 }
 .infooter{
-    height: 25vh;
+    height: 35vh;
 }
-.footercont{
-    display: flex;
-    justify-content: space-evenly;
+
+.footercont_c{
+    height: 0%;
+    display: none;
 }
 }

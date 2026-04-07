@@ -514,7 +514,7 @@ return VanillaTilt;
 // Функция плавного отсчета
 const animateNumbers = (el) => {
     const target = +el.getAttribute('data-target'); // Берем число из атрибута
-    const duration = 6000; // 2 секунды на анимацию
+    const duration = 3000; //  секунды на анимацию
     let start = null;
 
     const step = (timestamp) => {
