@@ -38,10 +38,6 @@ body{
     -ms-user-select: none;
     user-select: none;
 }
-.for_long_disp{
-    margin: 0;
-    padding: 0;
-}
 .header{
     height: 40px;
     position:relative;
@@ -1181,13 +1177,4 @@ body{
     height: 0%;
     display: none;
 }
-}
-
-
-
-
-@media (max-width: 1080px){
-    .for_long_disp{
-        max-width: 1080px;
-    }
 }
