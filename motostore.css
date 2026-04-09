@@ -970,13 +970,14 @@ body{
     height: 250px;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
     border-radius: 5px;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     position: relative;
+    border: 4px solid rgb(155, 155, 155);
+    filter: brightness(0.9);
 }
 .ctlg_img{
     width: auto;
@@ -986,27 +987,13 @@ body{
     position: absolute;
     bottom: 7px;
     left: 15px;
-    margin: 0;
-}
-.cardsh1_ctlg{
-    font-family: aud;
-    color: #161616;
-    font-size: clamp(10px, 4vw, 20px);
-}
-.chars{
-    text-align: right;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 2vh;
-}
-.cardsp_ctlg{
-    font-family: man;
-    color: #383838;
     font-weight: 500;
     margin: 0;
+    font-family: aud;
+    color: #383838;
+    font-size: clamp(10px, 4vw, 20px);
 }
+
 
 
 
