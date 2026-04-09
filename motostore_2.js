@@ -509,6 +509,13 @@ return VanillaTilt;
             glare: true,
             "max-glare": 0.5
         });
+
+ VanillaTilt.init(document.querySelectorAll(".ctlg_card"), {
+            max: 5,
+            speed: 400,
+            glare: true,
+            "max-glare": 1
+        });
        
 
 // Функция плавного отсчета
