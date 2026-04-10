@@ -514,7 +514,7 @@ return VanillaTilt;
             max: 5,
             speed: 400,
             glare: true,
-            "max-glare": 1
+            "max-glare": 0.6
         });
        
 
