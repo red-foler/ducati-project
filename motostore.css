@@ -1010,8 +1010,8 @@ body{
     left: 15px;
     font-weight: 100;
     margin: 0;
-    font-family: hel;
-    color: #595959;
+    font-family: aud;
+    color: #632727;
     font-size: clamp(10px, 4vw, 20px);
     z-index: 10;
 }
